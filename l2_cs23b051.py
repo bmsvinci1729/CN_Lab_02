@@ -37,7 +37,7 @@ plt.plot(p_values, ana, label="Analytical", color="blue")
 
 # PLOT EMPIRICAL SECOND (The dots on top)
 # Using marker="bold" or "fcircle" for better visibility
-plt.scatter(p_values, emp, label="Empirical", marker="x", color="red")
+plt.scatter(p_values, emp, label="Empirical", marker ="x",  color="red")
 
 
 plt.title(f"Slotted ALOHA Throughput (n={n})")

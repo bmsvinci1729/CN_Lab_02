@@ -30,26 +30,26 @@ data = np.column_stack((p_values, emp, ana))
 #np.savetxt('l2_cs23b051.txt', data, header=header, fmt='%.4f')
 
 # 2. Plotting with plotext
-#plt.clf()
+plt.clf()
 
 # PLOT ANALYTICAL FIRST (The background line)
-#plt.plot(p_values, ana, label="Analytical", color="blue")
+plt.plot(p_values, ana, label="Analytical", color="blue")
 
 # PLOT EMPIRICAL SECOND (The dots on top)
 # Using marker="bold" or "fcircle" for better visibility
-#plt.scatter(p_values, emp, label="Empirical", marker="x", color="red")
+plt.scatter(p_values, emp, label="Empirical", marker="x", color="red")
 
 
-#plt.title(f"Slotted ALOHA Throughput (n={n})")
-#plt.xlabel("Probability p")
-#plt.ylabel("Success Prob")
-#plt.grid(True)
-#plt.show()
+plt.title(f"Slotted ALOHA Throughput (n={n})")
+plt.xlabel("Probability p")
+plt.ylabel("Success Prob")
+plt.grid(True)
+plt.show()
 
 # If you want to save the TEXT VERSION of the plot:
-#plt.save_fig("l2_cs23b051.txt")
+plt.save_fig("l2_cs23b051.txt")
 
-#print(f"\nSimulation complete.")
+print(f"\nSimulation complete.")
 #print(f"Data saved to: l2_cs23b051.txt")
-#print(f"Visual plot saved to: l2_cs23b051.txt")
-#print(data)
+print(f"Visual plot saved to: l2_cs23b051.txt")
+print(data)
